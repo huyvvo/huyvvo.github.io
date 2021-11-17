@@ -7,7 +7,7 @@
 
 <html lang="en">
 <head>
-  <title>OSD</title>
+  <title>rOSD</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -32,8 +32,8 @@
         width: 90%;
       }
       .author{
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 50px;
+        padding-left: 50px;
         margin-top: 15px;
         text-align: center;
         font-size: 18px;
@@ -42,8 +42,8 @@
         margin-top: 20px;
         font-size: 18px;
         text-align: center;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 40px;
+        padding-left: 40px;
       }
       .abstract{
         font-size: 16px;
@@ -56,17 +56,13 @@
     <div class="container">
         <div class="row">
             <h1 class="paper-title center">
-                Unsupervised Image Matching and Object Discovery as Optimization
+                Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections
             </h1>
             <div>                
-                <table class="author center" width="90%">
+                <table class="author center" width="70%">
                     <tbody>
                         <tr>
                             <td class="author"><a href="https://huyvvo.github.io">Huy V. Vo</a><br>INRIA, Valeo.ai, ENS</td>
-                            <td class="author"><a href="https://www.di.ens.fr/~fbach/">Francis Bach</a><br>INRIA</td>
-                            <td class="author"><a href="http://cvlab.postech.ac.kr/~mcho/">Minsu Cho</a><br>POSTECH</td>
-                            <td class="author"><a href="https://www.kaihan.org/">Kai Han</a><br>University of Oxford</td>
-                            <td class="author"><a href="http://yann.lecun.com/">Yann LeCun</a><br>NYU</td>
                             <td class="author"><a href="https://ptrckprz.github.io/">Patrick Pérez</a><br>Valeo.ai</td>
                             <td class="author"><a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a><br>INRIA</td>
                         </tr>
@@ -77,9 +73,10 @@
                     <table class="materials center" width="70%" style="background-color: #90EE90; margin-top: 20px">
                         <tbody>
                             <tr>
-                                <td class="materials"><a href="https://arxiv.org/pdf/1904.03148.pdf">Paper [CVPR 2019]</a></td>
-                                <td class="materials"><a href="">Poster</a></td>
-                                <td class="materials"><a href="https://github.com/huyvvo/OSD">Code [Matlab]</a></td>
+                                <td class="materials"><a href="https://arxiv.org/pdf/2007.02662.pdf">Paper [ECCV 2020]</a></td>
+                                <td class="materials"><a href="">Slides</a></td>
+                                <td class="materials"><a href="">Video</a></td>
+                                <td class="materials"><a href="https://github.com/huyvvo/rOSD">Code [Matlab]</a></td>
                             </tr>  
                         </tbody>  
                     </table>
@@ -87,26 +84,25 @@
                 <div class="abstract center">
                     <h3 style="text-align: center">Abstract</h3>
                     <p>
-                        Learning with complete or partial supervision is powerful but relies on ever-growing human annotation efforts. As a way to mitigate this serious problem, as well as to serve specific applications, unsupervised learning has emerged as an important field of research. In computer vision, unsupervised learning comes in various guises. We focus here on the unsupervised discovery and matching of object categories among images in a collection, following the work of Cho et al. 2015. We show that the original approach can be reformulated and solved as a proper optimization problem. Experiments on several benchmarks establish the merit of our approach.
+                        This paper addresses the problem of discovering the objects present in a collection of images without any supervision. We build on the optimization approach of Vo et al. (CVPR'19) with several key novelties: (1) We propose a novel saliency-based region proposal algorithm that achieves significantly higher overlap with ground-truth objects than other competitive methods. This procedure leverages off-the-shelf CNN features trained on classification tasks without any bounding box information, but is otherwise unsupervised. (2) We exploit the inherent hierarchical structure of proposals as an effective regularizer for the approach to object discovery of Vo et al., boosting its performance to significantly improve over the state of the art on several standard benchmarks. (3) We adopt a two-stage strategy to select promising proposals using small random sets of images before using the whole image collection to discover the objects it depicts, allowing us to tackle, for the first time (to the best of our knowledge), the discovery of multiple objects in each one of the pictures making up datasets with up to 20,000 images, an over five-fold increase compared to existing methods, and a first step toward true large-scale unsupervised image interpretation.
 .
                     </p>
                 </div>
-                <img class="teaser center" src="../img/cvpr19.jpg" alt=""> 
+                <img class="teaser center" src="img/rOSD_overview.jpg" alt=""> 
                 <div class="center" style="text-align: justify; width: 70%">
                     <h3 style="text-align: center;">BibTex</h3>
                     <pre style="background-color: #e2e2e2; border: 1px dotted #818181; padding: 5px;">
-@inproceedings{Vo19UOD,
-  title     = {Unsupervised image matching and object discovery as optimization},
-  author    = {Vo, Huy V. and Bach, Francis and Cho, Minsu and Han, Kai and LeCun, 
-               Yann and P{\'e}rez, Patrick and Ponce, Jean},
-  booktitle = {Proceedings of the IEEE/CVF Conference in Computer Vision and Pattern Recognition ({CVPR})},
-  year      = {2019}
+@inproceedings{Vo20rOSD,
+  title     = {Toward Unsupervised, Multi-Object Discovery in Large-Scale Image Collections},
+  author    = {Vo, Huy V. and P{\'e}rez, Patrick and Ponce, Jean},
+  booktitle = {Proceedings of the European Conference on Computer Vision ({ECCV})},
+  year      = {2020}
 }</pre>
                 </div>
                 <div class="center" style="text-align: justify; width: 70%">
                     <h3 style="text-align: center;">Acknowledgments</h3>
                     <p style="font-size: 16px;">
-                        This work was supported in part by the Inria/NYU collaboration agreement, the Louis Vuitton/ENS chair on artificial intellgence and the EPSRC Programme Grant Seebibyte EP/M013774/1.
+                        This work was supported in part by the Inria/NYU collaboration, the Louis Vuitton/ENS chair on artificial intelligence and the French government under management of Agence Nationale de la Recherche as part of the “Investissements d’avenir” program, reference ANR19-P3IA-0001 (PRAIRIE 3IA Institute). Huy V. Vo was supported in part by a Valeo/Prairie CIFRE PhD Fellowship.
                     </p>
                 </div>
                 <br><br><br>
