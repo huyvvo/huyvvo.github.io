@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>OSD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	
+  <style>
+      .center{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .teaser{
+        display: block;
+        width: 70%;
+        margin-top: 15px;
+      }
+      .paper-title{
+        margin-top: 40px;
+        font-size: 48px;
+        text-align: center;
+        width: 90%;
+      }
+      .author{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .materials{
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+      }
+      .abstract{
+        font-size: 16px;
+        text-align: justify;
+        width: 70%;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="paper-title center">
+                Unsupervised Image Matching and Object Discovery as Optimization
+            </h1>
+            <div>                
+                <table class="author center" width="90%">
+                    <tbody>
+                        <tr>
+                            <td class="author"><a href="https://huyvvo.github.io">Huy V. Vo</a><br>INRIA, Valeo.ai, ENS</td>
+                            <td class="author"><a href="https://www.di.ens.fr/~fbach/">Francis Bach</a><br>INRIA</td>
+                            <td class="author"><a href="http://cvlab.postech.ac.kr/~mcho/">Minsu Cho</a><br>POSTECH</td>
+                            <td class="author"><a href="https://www.kaihan.org/">Kai Han</a><br>University of Oxford</td>
+                            <td class="author"><a href="http://yann.lecun.com/">Yann LeCun</a><br>NYU</td>
+                            <td class="author"><a href="https://ptrckprz.github.io/">Patrick Pérez</a><br>Valeo.ai</td>
+                            <td class="author"><a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a><br>INRIA</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="center">
+                    <!-- <h3 style="text-align: center;" width="70%">Materials</h3> -->
+                    <table class="materials center" width="70%" style="background-color: #90EE90; margin-top: 20px">
+                        <tbody>
+                            <tr>
+                                <td class="materials"><a href="https://arxiv.org/pdf/1904.03148.pdf">Paper [CVPR 2019]</a></td>
+                                <td class="materials"><a href="">Poster</a></td>
+                                <td class="materials"><a href="https://github.com/huyvvo/OSD">Code [Matlab]</a></td>
+                            </tr>  
+                        </tbody>  
+                    </table>
+                </div>
+                <div class="abstract center">
+                    <h3 style="text-align: center">Abstract</h3>
+                    <p>
+                        Learning with complete or partial supervision is powerful but relies on ever-growing human annotation efforts. As a way to mitigate this serious problem, as well as to serve specific applications, unsupervised learning has emerged as an important field of research. In computer vision, unsupervised learning comes in various guises. We focus here on the unsupervised discovery and matching of object categories among images in a collection, following the work of Cho et al. 2015. We show that the original approach can be reformulated and solved as a proper optimization problem. Experiments on several benchmarks establish the merit of our approach.
+.
+                    </p>
+                </div>
+                <img class="teaser center" src="../img/cvpr19.jpg" alt=""> 
+                <div class="center" style="text-align: justify; width: 70%">
+                    <h3 style="text-align: center;">BibTex</h3>
+                    <pre style="background-color: #e2e2e2; border: 1px dotted #818181; padding: 5px;">
+@inproceedings{Vo19UOD,
+  title     = {Unsupervised image matching and object discovery as optimization},
+  author    = {Vo, Huy V. and Bach, Francis and Cho, Minsu and Han, Kai and LeCun, 
+               Yann and P{\'e}rez, Patrick and Ponce, Jean},
+  booktitle = {Proceedings of the IEEE/CVF Conference in Computer Vision and Pattern Recognition ({CVPR})},
+  year      = {2019}
+}</pre>
+                </div>
+                <div class="center" style="text-align: justify; width: 70%">
+                    <h3 style="text-align: center;">Acknowledgments</h3>
+                    <p style="font-size: 16px;">
+                        This work was supported in part by the Inria/NYU collaboration agreement, the Louis Vuitton/ENS chair on artificial intellgence and the EPSRC Programme Grant Seebibyte EP/M013774/1.
+                    </p>
+                </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
