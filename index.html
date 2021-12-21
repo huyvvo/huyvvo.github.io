@@ -84,20 +84,6 @@
 	  text-decoration-style: wavy;
 	  text-decoration-color: red;
 	}
-	body {
-		position: relative;
-	}
-	.block_profile {
-	    position: fixed;
-    top: 14%;
-    left: 4%;
-	}
-	@media (min-width: 320px) and (max-width: 991.98px) {
-     .block_profile {
-		 position: relative;
-	 }
-
-	 }
   </style>
 </head>
 <body>
@@ -130,18 +116,14 @@
 	
 		<div class="row">
 			<div class="col-md-3" style="font-size: 16px;">
-				<div class="block_profile"
-				>
-				<div ><img class="img-responsive" src="profile_image_349.png" alt=""></div>
+				<div><img class="img-responsive" src="profile_image_349.png" alt=""></div>
 				<div style="font-size: 32px;"><b>Huy V. Vo</b></div>
 				<p>Ecole Normale Superieure<br>
 				Willow, INRIA <a style="font-size: 18px" href=mailto:van-huy.vo@inria.fr><span>&#9993;</span></a><br>
 				Valeo.ai <a style="font-size: 18px" href=mailto:van-huy.vo@valeo.com><span>&#9993;</span></a><br>
 				Paris, France <br>
 				</p>				
-				<a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-2x"></i></a>  <a href="https://github.com/huyvvo"><i class="fab fa-github-square fa-2x"></i></a>  
-				<a href="https://www.linkedin.com/in/huy-v-vo-461314115/"><i class="fab fa-linkedin fa-2x"></i></a>
-			</div>
+				<a href="https://scholar.google.com/citations?user=gIf5VqUAAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-2x"></i></a>  <a href="https://github.com/huyvvo"><i class="fab fa-github-square fa-2x"></i></a>  <a href="https://www.linkedin.com/in/huy-v-vo-461314115/"><i class="fab fa-linkedin fa-2x"></i></a>
 			</div>
 			<div class="col-md-9">
 				<div>
@@ -241,19 +223,7 @@
     
     <!-- Other people may like it too! -->
 <!--     <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>  -->
-    <script>
-window.addEventListener('scroll',handlescrool() )
-var profile = document.querySelector('.block_profile')
-
-function handlescrool () {
-	console.log( window.scrollTop
-    ,' window.screenTop');
-    console.log(profile.scrollTop, 'scrollTop profile');
-}
-
-   
-
-	</script>
+    
 </body>
 
 </html>
