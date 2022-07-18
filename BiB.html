@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>LOD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	
+  <style>
+      .center{
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .teaser{
+        display: block;
+        width: 70%;
+        margin-top: 15px;
+      }
+      .paper-title{
+        margin-top: 40px;
+        font-size: 48px;
+        text-align: center;
+        width: 90%;
+      }
+      .author{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .materials{
+        margin-top: 20px;
+        font-size: 18px;
+        text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;  
+      }
+      .abstract{
+        font-size: 16px;
+        text-align: justify;
+        width: 70%;
+      }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="paper-title center">
+                Active Learning Strategies for Weakly-Supervised Object Detection
+            </h1>
+            <div>                
+                <table class="center" width="70%">
+                    <tbody>
+                        <tr>
+                            <td class="author"><a href="https://huyvvo.github.io">Huy V. Vo</a><br>INRIA, Valeo.ai, ENS</td>
+                            <td class="author"><a href="https://esizikova.github.io/">Oriane Siméoni</a><br>Valeo.ai</td>
+                            <td class="author"><a href="https://esizikova.github.io/">Spyros Gidaris</a><br>Valeo.ai</td>
+                            <td class="author"><a href="https://esizikova.github.io/">Andrei Bursuc</a><br>Valeo.ai</td>
+                            <td class="author"><a href="https://ptrckprz.github.io/">Patrick Pérez</a><br>Valeo.ai</td>
+                            <td class="author"><a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a><br>INRIA</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="center">
+                    <!-- <h3 style="text-align: center;" width="70%">Materials</h3> -->
+                    <table class="center" width="70%" style="background-color: #90EE90; margin-top: 20px;">
+                        <tbody>
+                            <tr>
+                                <td class="materials"><a href="">Paper [ECCV 2022]</a></td>
+                                <td class="materials"><a href="https://github.com/huyvvo/BiB">Code [Github]</a></td>
+                            </tr>  
+                        </tbody>  
+                    </table>
+                </div>
+                <div class="abstract center">
+                    <h3 style="text-align: center">Abstract</h3>
+                    <p>
+                        Object detectors trained with weak annotations are affordable alternatives to fully-supervised counterparts. However, there is still a significant performance gap between them. We propose to narrow this gap by fine-tuning a base pre-trained weakly-supervised detector with a few fully-annotated samples automatically selected from the training set using ``box-in-box'' (BiB), a novel active learning strategy designed specifically to address the well-documented failure modes of weakly-supervised detectors. Experiments on the VOC07 and COCO benchmarks show that \bib outperforms other active learning techniques and significantly improves the base weakly-supervised detector's performance with only a few fully-annotated images per class. BiB reaches 97% of the performance of fully-supervised Fast RCNN with only 10% of fully-annotated images on VOC07. On COCO, using on average 10 fully-annotated images per class, or equivalently 1% of the training set, BiB also reduces the performance gap (in AP) between the weakly-supervised detector and the fully-supervised Fast RCNN by over 70%, showing a good trade-off between performance and data efficiency.
+.
+                    </p>
+                </div>
+                <img class="teaser center" src="img/BiB_svg.png" alt=""> 
+                <div class="center" style="text-align: justify; width: 70%">
+                    <h3 style="text-align: center;">BibTex</h3>
+                    <pre style="background-color: #e2e2e2; border: 1px dotted #818181; padding: 5px;">
+@inproceedings{BiB_eccv22,
+   title = {Active Learning Strategies for Weakly-Supervised Object Detection},
+   author = {Vo, Huy V. and Sim{\'e}oni, Oriane and Gidaris, Spyros and Bursuc, Andrei and P{\'e}rez, Patrick and Ponce, Jean},
+   journal = {Proceedings of the European Conference on Computer Vision {(ECCV)}},
+   month = {October},
+   year = {2022}
+}</pre>
+                </div>
+                <div class="center" style="text-align: justify; width: 70%">
+                    <h3 style="text-align: center;">Acknowledgments</h3>
+                    <p style="font-size: 16px;">
+                        This work was supported in part by the Inria/NYU collaboration, the Louis Vuitton/ENS chair on artificial intelligence and the French government under management of Agence Nationale de la Recherche as part of the ``Investissements d’avenir'' program, reference ANR19-P3IA-0001 (PRAIRIE 3IA Institute). It was performed using HPC resources from GENCI–IDRIS (Grant 2021-AD011013055). Huy V. Vo was supported in part by a Valeo/Prairie CIFRE PhD Fellowship.
+                    </p>
+                </div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
