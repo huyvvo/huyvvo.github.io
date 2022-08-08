@@ -17,13 +17,17 @@
   <link rel="stylesheet" href="css/academicons/css/academicons.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lily Script One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=WindSong' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
   <script src="https://kit.fontawesome.com/8e1343de23.js" crossorigin="anonymous"></script>
   
   <style>
     .navbar {
     overflow: hidden;
     /*background-color: #333;*/
-    background-color: #550A21;
+    background-color: #0A2155;
     border-color: transparent;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -33,42 +37,65 @@
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    color: pink !important;
+    color: #AFC0CB !important;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.5vmax;
+    font-size: 2.25vmax;
+    font-family: 'Cookie';
   }
 
   
   /* Change background on mouse-over */
   .navbar a:hover {
-    color: red !important;
+    color: #0E8EE1 !important;
   }
 
   /* Main content */
   .main {
     margin-top: 50px; /* Add a top margin to avoid content overlay */
-    font-size:1.5vmax;
-    font-family: 'Montserrat';
-    color: #550A21;
+    font-size:2.25vmax;
+    /*font-family: 'Montserrat';*/
+    /*font-family: 'Lily Script One';*/
+    /*font-family: 'WindSong';*/
+    /*font-family: 'Pacifico';*/
+    font-family: 'Cookie';
+    color: #850A31;
+    /*color: #BD0A41;*/
+    /*color: #620417;*/
+    /*color: #BA1212;*/
+    text-align: center;
   }
 
   .head1{
-    font-size: 4vmax;
+    font-size: 6vmax;
+    text-align: center;
+    color: #0A2155; !important;
   }
 
   .head2{
-    font-size: 2.5vmax;
+    font-size: 3.75vmax;
+    text-align: center;
+    /*color: #0A2155; !important;*/
   }
 
   .names{
-    font-size: 4vw;
+    font-size: 8vmin;
+    /*font-family: 'Lily Script One';*/
+    color: #BA1212;
+  }
+
+  .dates{
+    font-size: 6vmin;
   }
 
   /*-------------------------------------------------------------------------*/
   /* Image slide show*/
   * {box-sizing: border-box}
-  body {font-family: Montserrat, sans-serif; margin:0}
+  body {
+    font-family: Montserrat, sans-serif; 
+    margin:0;
+
+  }
   .mySlides {display: none}
   img {vertical-align: middle;}
 
@@ -179,26 +206,25 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav" style="padding-left: 22%">
-          <li><a href="wedsite.html">Home</a></li>
+          <li><a href="wedding.html">Home</a></li>
           <li><a href="#program">Program</a></li>
           <li><a href="#galery">Photo Galery</a></li>
           <li><a href="#rsvp">RSVP</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#info">Infos Pratique</a></li>
       </ul>
     </div>
     </div>
   </nav>
   
   <!-- Page Content -->
-    <div class="container-fluid main">
-      <!-- style="background-image: url('img/background_wedding_1.jpg'); background-repeat: repeat !important; background-size: cover, auto !important;  background-position: center; -->
+    <div class="container-fluid main" style="background-image: url('wed_img/background_wedding_6.jpg') !important; background-repeat: repeat-x!important; background-size: cover, cover !important;  background-position: center">
     
       <div class="row">
         <div class="col-md-12" style="background-image: url('wed_img/background_home.jpg'); background-repeat: no-repeat !important; background-size: cover, auto !important;  background-position: center;">
           <!-- height: 0; padding-top: 40.64%; -->
           <img src="wed_img/background_home.jpg" style="visibility: hidden; width: 100%" />
           <div class="names" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
-            Phuong & Huy <br>November 5, 2022
+            Phuong & Huy <br> <span class="dates">November 5, 2022</span>
           </div>
         </div>
       </div>
@@ -211,11 +237,13 @@
         <div class="col-md-12" style="text-align: center;">
           <!-- <img class="img-fluid" src="img/background_wedding_1.jpg" style="visibility: hidden; width: 100%; top: 0; left: 0" /> -->
           <!-- <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;"> -->
-            <p class="head1"> Program <br> --- </p>
+            <p class="head1"> 
+              Program <br>
+              <span style="color: #850A31">---</span> </p>
             <p class="head2">Civil Mariage</p>
             <p>
               10 : 00 <br>
-              Mairie de Palaiseau <br>
+              Mairie of Palaiseau <br>
               91 Rue de Paris <br>
               91120 Palaiseau <br>
             </p>
@@ -236,19 +264,44 @@
       </div>  
 
       <div class="row">
-        <div class="head1" style="text-align: center; color: #550A21">
+        <div class="head1">
           <p>
             Our Photo Story <br>
-            ---
+            <span style="color: #850A31">---</span>
           </p>
         </div>
 
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-10 col-md-offset-1">
           <div class="w3-content w3-display-container">
-            <img class="mySlides" src="wed_img/proposal_generation_lite.jpg" style="width:100%; aspect-ratio:16/8">
-            <img class="mySlides" src="wed_img/background_home.jpg" style="width:100%; aspect-ratio:16/8">
-            <img class="mySlides" src="wed_img/proposal_generation_lite.jpg" style="width:100%; aspect-ratio:16/8">
-            <img class="mySlides" src="wed_img/background_home.jpg" style="width:100%; aspect-ratio:16/8">
+            <img class="mySlides" src="wed_img/galery/1.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/2.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/3.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/4.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/5.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/6.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/7.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/8.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/9.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/10.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/11.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/12.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/13.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/14.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/15.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/16.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/16_5.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/17.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/18.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/19.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/20.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/21.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/22.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/23.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/24.JPG" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/25.JPG" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/26.JPG" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/27.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -261,27 +314,40 @@
       </div> 
 
       <div class="row">
-        <div style="text-align: center; color: #550A21">
+        <div>
           <p class="head1">
             RSVP<br>
-            ---
+            <span style="color: #850A31">---</span>
           </p>
           <p >
-            Your presence will make the day more special for us. Please let us know if you can join!
+            Your presence will make the day more special for us. <br>Please let us know if you can join!
           </p>
-          <button type="button" onclick="location.href='https://huyvvo.github.io';">Answer</button>
+          <br>
+          <button type="button" style="border-radius: 12px;" onclick="location.href='https://forms.gle/D4V8CANaA6qffYY27';">Answer</button>
         </div>
       </div>
 
-      <div class="row center" id="contact">
+      <div class="row center" id="info">
         <img src="wed_img/ornament_2_transparent.png" class="responsive" style="width: 30%; display: block; margin-left: auto; margin-right: auto;"/>        
       </div> 
 
       <div class="row">
-        <div class="head1" style="text-align: center; color: #550A21">
+        <div class="head1">
           <p>
-            Contacts<br>
+            Infos Pratique <br>
+            <span style="color: #850A31">---</span>
           </p>
+        </div>
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-5 col-md-offset-1"">
+            <p class="head2"> Public Transport </p>
+            <p style="font-family: Montserrat;font-size: 1.25vmax">To mairie of Palaiseau: RER B (station Palaiseau)</p>
+            <p style="font-family: Montserrat;font-size: 1.25vmax">To Novotel Saclay: Bus 91.11 (stop La Martiniere), 91.06/91.10 (stop Christ de Saclay)
+          </div>
+          <div class="col-md-5" style="text-align: center;">
+            <p class="head2">Dress code<br></p>
+            <img src="wed_img/galery/dress_code_transparent.png" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+          </div>
         </div>
       </div>
 
