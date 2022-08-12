@@ -106,6 +106,11 @@
 
   }
   .mySlides {display: none}
+  .myCaption{
+    display: none;
+    font-family: 'Cookie';
+    font-size: 2.5vmax;
+  }
   img {vertical-align: middle;}
 
   /* Slideshow container */
@@ -285,16 +290,24 @@
             <img class="mySlides" src="wed_img/galery/sport.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
             <img class="mySlides" src="wed_img/galery/anniversary.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
             <img class="mySlides" src="wed_img/galery/birthday.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            <img class="mySlides" src="wed_img/galery/out.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
             <img class="mySlides" src="wed_img/galery/valentine.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
             <img class="mySlides" src="wed_img/galery/fourseason.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
-            <img class="mySlides" src="wed_img/galery/out.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
-            <img class="mySlides" src="wed_img/galery/shoot1.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
-            <img class="mySlides" src="wed_img/galery/shoot2.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
-            <img class="mySlides" src="wed_img/galery/shoot3.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
-            <img class="mySlides" src="wed_img/galery/shoot4.jpg" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
-
+            <img class="mySlides" src="wed_img/galery/wedding_photo_small.png" style="max-height: 70vh; max-width: 66vw; margin: 0px auto;">
+            
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          <div class="w3-content w3-display-container">
+            <p class="myCaption">We are Phuong and Huy, and this is our short story</p>
+            <p class="myCaption">We like cooking and baking, but more than all, we like eating</p>
+            <p class="myCaption">We do sport to keep our weight from exploding</p>
+            <p class="myCaption">Our tradition at monthy anniversaries is a box of chocolate</p>
+            <p class="myCaption">On our birthday, we enjoy durian cakes</p>
+            <p class="myCaption">We like hiking in summers and hunting small-town Marche de Noel in winters</p>
+            <p class="myCaption">We have passed two Valentines together</p>
+            <p class="myCaption">We have passed springs, summers, autumns and winters</p>
+            <p class="myCaption">We have been together through thick and think (mostly thick), for two years and counting</p>
           </div>
         </div>
       </div>
@@ -361,6 +374,14 @@
     function showDivs(n) {
       var i;
       var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+
+      var x = document.getElementsByClassName("myCaption");
       if (n > x.length) {slideIndex = 1}
       if (n < 1) {slideIndex = x.length}
       for (i = 0; i < x.length; i++) {
