@@ -1,0 +1,33 @@
+# compress pdf
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/screen -dAutoRotatePages=/None -dUseCIEColor -r150 -sOutputFile=output.pdf input.pdf
+# Imporant parameter:
+# -dPDFSETTINGS=/screen lower quality, smaller size. (72 dpi)
+# -dPDFSETTINGS=/ebook for better quality, but slightly larger pdfs. (150 dpi)
+# -dPDFSETTINGS=/prepress output similar to Acrobat Distiller "Prepress Optimized" setting (300 dpi)
+# -dPDFSETTINGS=/printer selects output similar to the Acrobat Distiller "Print Optimized" setting (300 dpi)
+# -dPDFSETTINGS=/default selects output intended to be useful across a wide variety of uses, possibly at the expense of a larger output file
+
+# merge pdf with pages specified
+# merge pages 1-4 of 1.pdf, page 2 of 2.pdf and all pages pf 3.pdf into combined.pdf
+# Declaration of file handles A,B,C,... is necessary. Can use as many handles as you wish
+pdftk A=1.pdf B=2.pdf C=3.pdf cat A1-4 B2 C output combined.pdf
+
+# rclone
+Go to ~/data/.local/rclone**
+./rclone copy --drive-shared-with-me remote:
+./rclone ls --drive-shared-with-me remote:
+
+# jupyter ssh
+
+In gpu machine: jupyter notebook --no-browser --port 5555 &
+In master node: ssh -N -f -L localhost:5554:localhost:5555 vavo@machine_name &
+In local machine: ssh -N -f -L localhost:5553:localhost:5554 vavo@sequoia.inria.fr &
+
+# convert jpg to png
+# this will make transparent background black
+convert image.jpg image.png
+# this will make transparent background white
+convert image.png -background white -flatten -alpha off image.jpg
+
+# print format in awk
+cat "$f"/logs.txt | tail -1 | awk '{printf "%.1f ", 100*$2}'
