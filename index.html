@@ -52,7 +52,7 @@
 		display: inline-block;
 		background-clip: padding-box; /* this has been added */
 	    border-radius: 8px;
-	    background-color: #369;
+	    background-color: #fc8c0c;
 	    color: white;
 	    border: 2px solid white;
 	    font-size: 16px;
@@ -83,6 +83,27 @@
 	  text-decoration-line: underline;
 	  text-decoration-style: wavy;
 	  text-decoration-color: red;
+	}
+	.collapsible {
+		background-color: #fc8c0c;
+		border-radius: 8px;
+		color: white;
+		cursor: pointer;
+		border: 2px solid white;
+	    font-size: 16px;
+	    min-width: 150px;
+	    height: 30px;
+	    text-align: center;
+	    padding: 2px;
+	}
+	.hiddencontent {
+		/* padding: 0 18px; */
+		display: none;
+		overflow: hidden;
+		}
+
+	.huyname{
+		color: rgb(27, 116, 164);
 	}
   </style>
 </head>
@@ -125,7 +146,7 @@
 				<!-- <h2 style="box-shadow: 0px 6px 3px -6px #888888">About me</h2> -->
 				<div style="text-align:justify; font-size: 16px;">                
 					<p>
-						I am currently an AI Research Scientist at FAIR Labs, Meta. I obtained my PhD in Computer Science 
+						I am currently a Research Scientist at FAIR Labs, Meta. I obtained my PhD in Computer Science 
 						from <a href="https://www.ens.psl.eu/en">Ecole Normale Superieure</a> on November 2022. 
 						My thesis was prepared in the <a href="https://www.di.ens.fr/willow/">WILLOW</a> team at INRIA and 
 						the <a href="https://ptrckprz.github.io/valeoai/">Valeo.ai</a> team under the supervision of 
@@ -156,11 +177,11 @@
 						visual tasks (depth estimation, semantic segmentation).
 					</li>
 					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">11/2022</span> 
+						<span class="news" style="background-color: rgb(244, 67, 54)">11/2022</span> 
 						I am joining FAIR Labs, Meta as an AI Research Scientist.
 					</li>
 					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">11/2022</span> 
+						<span class="news" style="background-color: rgb(244, 67, 54)">11/2022</span> 
 						I successully defended my thesis on "Annotation-efficient learning for object discovery and detection". 
 						The thesis was reviewed by Prof. <a href="https://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a> 
 						and Prof. <a href="https://homes.esat.kuleuven.be/~tuytelaa/">Tinne Tuytelaars</a>, 
@@ -171,36 +192,40 @@ and supervised by Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> a
 						Dr. <a href="https://ptrckprz.github.io/">Patrick Pérez</a>. 
 					</li>
 					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">07/2022</span> Our work on active and weakly-supervised object detection, <a href="BiB.html">BiB</a>, is accepted to <a href="https://eccv2022.ecva.net/">ECCV 2022</a>.
+						<span class="news" style="background-color: rgb(244, 67, 54)">07/2022</span> Our work on active and weakly-supervised object detection, <a href="BiB.html">BiB</a>, is accepted to <a href="https://eccv2022.ecva.net/">ECCV 2022</a>.
 					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">10/2021</span> Our work on unsupervised object discovery/detection, <a href="https://valeoai.github.io/blog/publications/lost">LOST</a>, is accepted to <a href="https://britishmachinevisionassociation.github.io/bmvc">BMVC 2021</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">09/2021</span> Our work on large-scale unsupervised object discovery, <a href="LOD.html">LOD</a>, is accepted to <a href="https://nips.cc/Conferences/2021/">NeuRIPS 2021</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">03/2021</span> Our <a href="https://openreview.net/pdf?id=-9bAYexxLtN">paper</a> on weakly supervised lesion segmentation is accepted at <a href="https://2021.midl.io/">MIDL 2021</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">07/2020</span> Our work on unsupervised object discovery, <a href="rOSD.html">rOSD</a>, is accepted at <a href="https://eccv2020.eu/">ECCV 2020</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">10/2019</span> I am visiting <a href="https://cds.nyu.edu/">Center for Data Science, New York University</a> for 3 months.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">03/2019</span> Our work on unsupervised object discovery, <a href="OSD.html">OSD</a>, is accepted at <a href="https://cvpr2019.thecvf.com/">CVPR 2019</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">10/2018</span> I start my PhD in <a href="https://www.di.ens.fr/willow/">INRIA's Willow team</a> and <a href="https://valeoai.github.io/blog/">Valeo.ai</a> under the supervision of Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> and Dr. <a href="https://ptrckprz.github.io/">Patrick Pérez</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">04/2018</span> I start a 6-month research internship in the <a href="https://www.di.ens.fr/willow/">WILLOW team</a> of INRIA and <a href="https://cds.nyu.edu/">Center for Data Science (New York university)</a>, 
-							working on object discovery under the supervision of Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> and Prof. <a href="http://yann.lecun.com/">Yann LeCun</a>.
-					</li>
-					<li class="news-li">
-						<span class="news" style="background-color: rgb(255, 220, 220)">04/2017</span> I start a 5-month internship at Technicolor, working on Image inpainting under the supervision of Dr. <a href="https://ptrckprz.github.io/">Patrick Pérez</a>.
-					</li>
+					
+					<button type="button", class="collapsible">Older news >>></button>
+					<div class="hiddencontent">
+						<li class="news-li">
+							<span class="news">10/2021</span> Our work on unsupervised object discovery/detection, <a href="https://valeoai.github.io/blog/publications/lost">LOST</a>, is accepted to <a href="https://britishmachinevisionassociation.github.io/bmvc">BMVC 2021</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">09/2021</span> Our work on large-scale unsupervised object discovery, <a href="LOD.html">LOD</a>, is accepted to <a href="https://nips.cc/Conferences/2021/">NeuRIPS 2021</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">03/2021</span> Our <a href="https://openreview.net/pdf?id=-9bAYexxLtN">paper</a> on weakly supervised lesion segmentation is accepted at <a href="https://2021.midl.io/">MIDL 2021</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">07/2020</span> Our work on unsupervised object discovery, <a href="rOSD.html">rOSD</a>, is accepted at <a href="https://eccv2020.eu/">ECCV 2020</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">10/2019</span> I am visiting <a href="https://cds.nyu.edu/">Center for Data Science, New York University</a> for 3 months.
+						</li>
+						<li class="news-li">
+							<span class="news">03/2019</span> Our work on unsupervised object discovery, <a href="OSD.html">OSD</a>, is accepted at <a href="https://cvpr2019.thecvf.com/">CVPR 2019</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">10/2018</span> I start my PhD in <a href="https://www.di.ens.fr/willow/">INRIA's Willow team</a> and <a href="https://valeoai.github.io/blog/">Valeo.ai</a> under the supervision of Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> and Dr. <a href="https://ptrckprz.github.io/">Patrick Pérez</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">04/2018</span> I start a 6-month research internship in the <a href="https://www.di.ens.fr/willow/">WILLOW team</a> of INRIA and <a href="https://cds.nyu.edu/">Center for Data Science (New York university)</a>, 
+								working on object discovery under the supervision of Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> and Prof. <a href="http://yann.lecun.com/">Yann LeCun</a>.
+						</li>
+						<li class="news-li">
+							<span class="news">04/2017</span> I start a 5-month internship at Technicolor, working on Image inpainting under the supervision of Dr. <a href="https://ptrckprz.github.io/">Patrick Pérez</a>.
+						</li>
+					</div>
 				</ul>
 			</div>
 
@@ -220,51 +245,94 @@ and supervised by Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> a
 				<h3 style="box-shadow: 0px 6px 3px -6px #0000ff" id="publications">Publications</h3>
 
 				<div class="paper" words="self-supervised, foundation models">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">Arxiv 2023</span><strong style="font-size: 18px">Dinov2: Learning robust visual features without supervision</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">Arxiv 2023</span>
+					<strong style="font-size: 18px">
+						DINOv2: Learning robust visual features without supervision
+					</strong><br>
 					[<a href="https://dinov2.dev.metademolab.com/">project page</a>]<br>
-					Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy V. Vo, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski et al.<br>
+					Maxime Oquab, Timothée Darcet, Théo Moutakanni, <span class="huyname">Huy V. Vo</span>, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski et al.<br>
+				</div>
+
+				<div class="paper" words="self-supervised, foundation models">
+					<span class="conference" style="background-color: rgb(21, 67, 96)">Arxiv 2023</span>
+					<strong style="font-size: 18px">
+						Sub-meter resolution canopy height maps using self-supervised learning and a vision transformer trained on Aerial and GEDI Lidar
+					</strong><br>
+					[<a href="https://arxiv.org/abs/2304.07213">paper</a>]<br>
+					Jamie Tolan, Hung-I Yang, Ben Nosarzewski, Guillaume Couairon, <span class="huyname">Huy V. Vo</span>, John Brandt, Justine Spore, Sayantan Majumdar, 
+					Daniel Haziza, Janaki Vamaraju, Theo Moutakani, Piotr Bojanowski, Tracy Johns, Brian White, Tobias Tiecke, Camille Couprie<br>
+				</div>
+
+				<div class="paper" words="self-supervised, foundation models">
+					<span class="conference" style="background-color: rgb(21, 67, 96)">Thesis</span>
+					<strong style="font-size: 18px">
+						Annotation-efficient learning for object discovery and detection
+					</strong><br>
+					[<a href="https://hal.science/tel-03919952/">thesis</a>]<br>
+					<span class="huyname">Huy V. Vo</span><br>
 				</div>
 				
 				<div class="paper" words="active learning, weakly-supervised, object detection">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">ECCV 2022</span><strong style="font-size: 18px">Active Learning Strategies for Weakly-Supervised Object Detection</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">ECCV 2022</span>
+					<strong style="font-size: 18px">
+						Active Learning Strategies for Weakly-Supervised Object Detection
+					</strong><br>
 					[<a href="BiB.html">project page</a>]<br>
-					Huy V. Vo, Oriane Siméoni, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Jean Ponce<br>
+					<span class="huyname">Huy V. Vo</span>, Oriane Siméoni, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Jean Ponce<br>
 				</div>
 				
 				<div class="paper" words="large-scale, object discovery, unsupervised">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">NeurIPS 2021</span><strong style="font-size: 18px">Large-Scale Unsupervised Object Discovery</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">NeurIPS 2021</span>
+					<strong style="font-size: 18px">
+						Large-Scale Unsupervised Object Discovery
+					</strong><br>
 					[<a href="LOD.html">project page</a>]<br>
-					Huy V. Vo, Elena Sizikova, Cordelia Schmid, Patrick Pérez, Jean Ponce<br>
+					<span class="huyname">Huy V. Vo</span>, Elena Sizikova, Cordelia Schmid, Patrick Pérez, Jean Ponce<br>
 				</div>
 			
 				<div class="paper" words="object discovery, unsupervised, transformer, localization, self-supervised">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">BMVC 2021</span><strong style="font-size: 18px">Localizing Objects with Self-Supervised Transformers and no Labels</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">BMVC 2021</span>
+					<strong style="font-size: 18px">
+						Localizing Objects with Self-Supervised Transformers and no Labels
+					</strong><br>
 					[<a href="https://valeoai.github.io/blog/publications/lost">project page</a>]<br>
-					Oriane Siméoni, Gilles Puy, Huy V. Vo, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Renaud Marlet and Jean Ponce<br>
+					Oriane Siméoni, Gilles Puy, <span class="huyname">Huy V. Vo</span>, Simon Roburin, Spyros Gidaris, Andrei Bursuc, Patrick Pérez, Renaud Marlet and Jean Ponce<br>
 				</div>
 
 				<div class="paper" words="multi-task learning, lesion segmentation">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">MIDL 2021</span><strong style="font-size: 18px">Improving Weakly Supervised Lesion Segmentation using Multi-Task Learning</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">MIDL 2021</span>
+					<strong style="font-size: 18px">
+						Improving Weakly Supervised Lesion Segmentation using Multi-Task Learning
+					</strong><br>
 					[<a href="https://openreview.net/pdf?id=-9bAYexxLtN">paper</a>][<a href="https://github.com/esizikova/weaklesionmtl">code</a>]<br>
-					Tianshu Chu, Xinmeng Li, Huy V. Vo, Ronald M Summers, Elena Sizikova<br>
+					Tianshu Chu, Xinmeng Li, <span class="huyname">Huy V. Vo</span>, Ronald M Summers, Elena Sizikova<br>
 				</div>
 
 				<div class="paper" words="object discovery, unsupervised learning">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">ECCV 2020</span><strong style="font-size: 18px">Toward unsupervised, multi-object discovery in large-scale image collections</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">ECCV 2020</span>
+					<strong style="font-size: 18px">
+						Toward unsupervised, multi-object discovery in large-scale image collections
+					</strong><br>
 					[<a href="rOSD.html">project page</a>]<br>
-					Huy V. Vo, Patrick Pérez, Jean Ponce<br>
+					<span class="huyname">Huy V. Vo</span>, Patrick Pérez, Jean Ponce<br>
 				</div>
 
 				<div class="paper" words="object discovery, unsupervised learning">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">CVPR 2019</span><strong style="font-size: 18px">Unsupervised image matching and object discovery as optimization</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">CVPR 2019</span>
+					<strong style="font-size: 18px">
+						Unsupervised image matching and object discovery as optimization
+					</strong><br>
 					[<a href="OSD.html">project page</a>]<br>
-					Huy V. Vo, Francis Bach, Minsu Cho, Kai Han, Yann LeCun, Patrick Pérez, Jean Ponce<br>
+					<span class="huyname">Huy V. Vo</span>, Francis Bach, Minsu Cho, Kai Han, Yann LeCun, Patrick Pérez, Jean Ponce<br>
 				</div>
 
 				<div class="paper" words="inpainting">
-					<span class="conference" style="background-color: rgb(21, 67, 96)">ACMMM 2018</span><strong style="font-size: 18px">Structural inpainting</strong><br>
+					<span class="conference" style="background-color: rgb(21, 67, 96)">ACMMM 2018</span>
+					<strong style="font-size: 18px">
+						Structural inpainting
+					</strong><br>
 					[<a href="inpainting.html">project page</a>]<br>
-					Huy V. Vo, Ngoc QK Duong, Patrick Pérez<br>
+					<span class="huyname">Huy V. Vo</span>, Ngoc QK Duong, Patrick Pérez<br>
 				</div>
 			
 			</div>
@@ -275,6 +343,23 @@ and supervised by Prof. <a href="https://www.di.ens.fr/~ponce/">Jean Ponce</a> a
     
     <!-- Other people may like it too! -->
 <!--     <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>  -->
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
     
 </body>
 
